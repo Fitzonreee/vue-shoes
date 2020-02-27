@@ -6,7 +6,8 @@
     <ul class="products">
       <li class="products__item" v-for="product in products" :key="product.index">
 
-        <div class="item__image" :style="{ 'background-image': `linear-gradient(to right, ${product.colorStart}, ${product.colorEnd}}` }">
+        <span class="item__color-bar" :style="{ 'background-image': `linear-gradient(to right, ${product.colorStart}, ${product.colorEnd}`}"></span>
+        <div class="item__image">
           <img src="../assets/images/products/vans-placeholder.png" alt="Product image" />
         </div>
         
@@ -103,6 +104,30 @@ export default {
 
   .item {
 
+    &__color-bar {
+      display: flex;
+      width: 100%;
+      height: 4px;
+    }
+
+    &__image {
+      background: rgba(0, 0, 0, 0.05);
+      height: 16em;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      &:hover img {
+        transform: scale(1.125)
+      }
+
+      img {
+        max-width: 65%;
+        transition: all 200ms ease;
+      }
+    }
+
     &__details {
       display: flex;
 
@@ -169,24 +194,6 @@ export default {
       letter-spacing: 1px;
     }
 
-
-    &__image {
-      background: rgba(0, 0, 0, 0.05);
-      height: 16em;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-
-      &:hover img {
-        transform: scale(1.125)
-      }
-
-      img {
-        max-width: 65%;
-        transition: all 200ms ease;
-      }
-    }
   }
 
 
