@@ -6,8 +6,9 @@
       "sizes": [7, 8, 9, 10, 11, 11.5, 12],
       "inStock": true,
       "price": 120,
-      "colorStart" : "#000",
-      "colorEnd" : "#c23616"
+      "colorStart": "#000",
+      "colorEnd": "#c23616",
+      "src": "allbirds"
     },
     { 
       "brand": "Vans",
@@ -16,8 +17,9 @@
       "inStock": true,
       "price": 120,
       "colorStart": "#000",
-      "colorEnd": "#c23616"
-    },
+      "colorEnd": "#c23616",
+      "src": "adidas-red"
+    },  
     { 
       "brand": "New Balance",
       "model": "Something",
@@ -25,8 +27,9 @@
       "inStock": true,
       "price": 120,
       "colorStart": "#000",
-      "colorEnd": "#c23616"
-    },
+      "colorEnd": "#c23616",
+      "src": "new-balance-leather_700x400"
+    },  
     { 
       "brand": "New Balance",
       "model": "Something",
@@ -34,8 +37,9 @@
       "inStock": true,
       "price": 120,
       "colorStart": "#000",
-      "colorEnd": "#c23616"
-    },
+      "colorEnd": "#c23616",
+      "src": "vans-hitop"
+    },  
     { 
       "brand": "New Balance",
       "model": "Something",
@@ -43,8 +47,9 @@
       "inStock": true,
       "price": 120,
       "colorStart": "#000",
-      "colorEnd": "#c23616"
-    },
+      "colorEnd": "#c23616",
+      "src": "allbirds"
+    },  
     { 
       "brand": "New Balance",
       "model": "Something",
@@ -52,8 +57,9 @@
       "inStock": true,
       "price": 120,
       "colorStart": "#000",
-      "colorEnd": "#c23616"
-    },
+      "colorEnd": "#c23616",
+      "src": "allbirds"
+    },  
     { 
       "brand": "New Balance",
       "model": "Something",
@@ -61,8 +67,9 @@
       "inStock": true,
       "price": 120,
       "colorStart": "#000",
-      "colorEnd": "orange"
-    },
+      "colorEnd": "orange",
+      "src": "allbirds"
+    },  
     { 
       "brand": "New Balance",
       "model": "Something",
@@ -70,8 +77,9 @@
       "inStock": true,
       "price": 120,
       "colorStart": "#000",
-      "colorEnd": "orange"
-    }, 
+      "colorEnd": "orange",
+      "src": "allbirds"
+    },  
     { 
       "brand": "New Balance",
       "model": "Something",
@@ -79,8 +87,9 @@
       "inStock": true,
       "price": 120,
       "colorStart": "#000000",
-      "colorEnd": "#345678"
-    }
+      "colorEnd": "#345678",
+      "src": "allbirds"
+    } 
 
 ];
 

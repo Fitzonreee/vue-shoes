@@ -8,7 +8,7 @@
 
         <span class="item__color-bar" :style="{ 'background-image': `linear-gradient(to right, ${product.colorStart}, ${product.colorEnd}`}"></span>
         <div class="item__image">
-          <img src="../assets/images/products/vans-placeholder.png" alt="Product image" />
+          <img :src="getImageURL(product.src)" alt="Product image" />
         </div>
         
         <div class="item__details">
@@ -44,6 +44,10 @@ export default {
   methods: {
     addToCart: function() {
       alert("Add to cart")
+    },
+    getImageURL(src) {
+      var images = require.context('../assets/images/products/', false, /\.png$/)
+      return images('./' + src + ".png")
     }
   }, 
   data() {
@@ -54,7 +58,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 
 .headline {
   text-align: center;
@@ -119,7 +123,7 @@ export default {
       align-items: center;
 
       &:hover img {
-        transform: scale(1.125)
+        transform: scale(1.125) rotate(-30deg);
       }
 
       img {
