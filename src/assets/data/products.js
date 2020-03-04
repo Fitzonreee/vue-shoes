@@ -1,8 +1,9 @@
   var products = [
   
     { 
-      "brand": "Nike",
-      "model": "Pegasus",
+      "brand": "Allbirds",
+      "model": "Wool Runners",
+      "color": "Natural Black (Black Sole)",
       "sizes": [7, 8, 9, 10, 11, 11.5, 12],
       "inStock": true,
       "price": 120,
@@ -11,8 +12,9 @@
       "src": "allbirds"
     },
     { 
-      "brand": "Vans",
-      "model": "Rowely",
+      "brand": "Adidas",
+      "model": "Busenitz",
+      "color": "White + Burgandy",
       "sizes": [7, 8, 9, 10, 11, 11.5, 12],
       "inStock": true,
       "price": 120,
@@ -22,7 +24,7 @@
     },  
     { 
       "brand": "New Balance",
-      "model": "Something",
+      "model": "Rev Lite",
       "sizes": [7, 8, 9, 10, 11, 11.5, 12],
       "inStock": true,
       "price": 120,
@@ -31,8 +33,8 @@
       "src": "new-balance-leather_700x400"
     },  
     { 
-      "brand": "New Balance",
-      "model": "Something",
+      "brand": "Vans",
+      "model": "High Top",
       "sizes": [7, 8, 9, 10, 11, 11.5, 12],
       "inStock": true,
       "price": 120,

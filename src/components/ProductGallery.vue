@@ -45,7 +45,7 @@ export default {
     addToCart: function() {
       alert("Add to cart")
     },
-    getImageURL(src) {
+    getImageURL: function(src) {
       var images = require.context('../assets/images/products/', false, /\.png$/)
       return images('./' + src + ".png")
     }
@@ -58,7 +58,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 
 .headline {
   text-align: center;

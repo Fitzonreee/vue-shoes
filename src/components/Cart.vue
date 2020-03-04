@@ -16,7 +16,7 @@
 
       <ul class="cart__items">
         <li class="item" v-for="product in products" :key="product.index">
-          <img class="item__image" src="../assets/images/products/vans-placeholder.png" alt="Vans placeholder">
+          <img class="item__image" :src="getImageURL(product.src)" alt="Vans placeholder">
           <div class="item__details">
             <h6 class="item__brand">{{product.brand}}</h6>
             <h3 class="item__model">{{product.model}}</h3>
@@ -29,7 +29,6 @@
 </template>
 
 <script>
-
 import productData from '../assets/data/products.js'
 
 export default {
@@ -45,6 +44,10 @@ export default {
   methods: {
     closeCart: function() {
       document.getElementsByTagName('body')[0].classList.remove('active')
+    },
+    getImageURL: function(src) {
+      var images = require.context('../assets/images/products/', false, /\.png$/)
+      return images('./' + src + ".png")
     }
   }
 }
